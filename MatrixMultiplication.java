@@ -48,7 +48,7 @@ public class MatrixMultiplication
 
 	public static boolean existFile(String path)
 	{
-		File file = new File(path);
+		File file = new File(PATH + "/" + path);
 
 		if(file.exists())
 			return true;
