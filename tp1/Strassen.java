@@ -26,7 +26,9 @@ public class Strassen {
 		double endTime = System.nanoTime();
 		double elapsedTime = endTime - startTime;
 
-		this.timeExecution = elapsedTime / 1000000000; // en secondes
+		// this.timeExecution = elapsedTime / 1000000000; // en secondes
+		// this.timeExecution = elapsedTime / 1000000; // en millisecondes
+		this.timeExecution = elapsedTime / 1000; // en microseconds
 
 		System.out.println("Strassen - Le temps d'execution en nanosecondes: " + elapsedTime);
 		System.out.println("Strassen - Le temps d'exectuion en secondes: " + this.timeExecution);
