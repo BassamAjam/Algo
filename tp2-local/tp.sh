@@ -25,5 +25,5 @@ esac
 shift
 done
 
-python3 ./designPatterns.py -a $ALGO $OPTIONS 
+python3 ./designPatterns.py $ALGO 
 # python3 ./designPatterns.py -e1 $EX_PATH_1 -a $ALGO $OPTIONS 
