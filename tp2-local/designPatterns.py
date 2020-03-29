@@ -5,28 +5,14 @@ from heuristique import Heuristique
 import sys, time
 
 def main():
-  # AVERAGE : choose a folder
-  # g = Glouton("./exemplaires")
-  # g.get_averages()
-
-  # f= open("solution.txt","w+")
-  # f.write(g.path + "\n")
-  # f.write("cost: " + str(g.array_patterns[0].transition_cost) + "\n")
-  # f.write("time execution: " + str(g.array_patterns[0].elapsed_time) + "\n")
-  # f.write("fingers solution: \n")
-  # for i in g.fingers_transitions:
-  #   f.write(str(i) + " ")
-  # f.close
-
-  ####################################################
-  # start_time = time.time()
 
   algo = sys.argv[1]
+  path = sys.argv[2]
   # path = "./exemplairess"
   # path = "./exemplaires"
   # path = "./exemplaires/ex_8000000_1.txt"
   # path = "./fur_elise.txt"
-  path = "./twinkle_twinkle.txt"
+  # path = "./twinkle_twinkle.txt"
   # path = "./exemplaires/ex_300000_1.txt"
 
   if algo == "glouton":
