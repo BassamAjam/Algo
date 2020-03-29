@@ -6,14 +6,15 @@ import sys, time
 
 def main():
 
-  algo = sys.argv[1]
   path = sys.argv[2]
+  algo = sys.argv[4]
   # path = "./exemplairess"
   # path = "./exemplaires"
   # path = "./exemplaires/ex_8000000_1.txt"
   # path = "./fur_elise.txt"
   # path = "./twinkle_twinkle.txt"
   # path = "./exemplaires/ex_300000_1.txt"
+  print(algo)
 
   if algo == "glouton":
     g = Glouton(path)
