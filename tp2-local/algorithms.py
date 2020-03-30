@@ -6,14 +6,13 @@ from os import path
 
 class Algorithm:
   path = ""
-  files = []
   array_length_exemplaries = []
-
+  fingers_transitions = []
+  files = []
   array_patterns = []
+
   average_costs = 0
   average_time_execution = 0
-
-  fingers_transitions = []
 
   def __init__(self, p):
     if path.exists(p):
@@ -64,12 +63,10 @@ class Algorithm:
     print(self.array_patterns[0].elapsed_time)
 
   def display_solution(self):
-    for i in self.fingers_transitions:
-      print(i, end = ' ')
+    print(*self.fingers_transitions)
 
   def display_solution_dp(self):
-    for j in self.fingers_transitions[::-1]:
-      print(j, end = ' ')
+    print(*self.fingers_transitions[::-1])
 
 ##########################################################
 

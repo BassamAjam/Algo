@@ -1,9 +1,8 @@
 from algorithms import Algorithm
-from interfaces import Pattern, Finger_cost, Two_fingers
+from interfaces import Pattern
 import time
 
 class Dynamic_programming(Algorithm):
-
   min_min = 0
   J = []
 
@@ -52,7 +51,7 @@ class Dynamic_programming(Algorithm):
 
       self.min_min = min(self.J[i])
       self.fingers_transitions.append(self.J[i].index(self.min_min))
-      print("i:{}".format(i))
+      # print("i:{}".format(i))
       i -= 1
 
     elapsed_time = (time.time() - start_time) * 1000

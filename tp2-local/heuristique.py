@@ -1,6 +1,6 @@
 from algorithms import Algorithm
 from glouton import Glouton
-from interfaces import Pattern, Finger_cost, Two_fingers
+from interfaces import Pattern, Finger_cost
 import time
 import random
 

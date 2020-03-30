@@ -14,7 +14,7 @@ case $key in
     EX_PATH_1="$2"
     shift
     ;;
-    -p|-t)
+    -c|-p|-t)
     OPTIONS="${OPTIONS}${1} "
     ;;
     *)
@@ -25,10 +25,6 @@ esac
 shift
 done
 
-python3 ./designPatterns.py -e1 $EX_PATH_1 -a $ALGO
-# python3 ./designPatterns.py ${ALGO} ${EX_PATH_1}
+python ./designPatterns.py -e1 $EX_PATH_1 -a $ALGO $OPTIONS
 
-
-# java MatrixMultiplication $EX_PATH_1 $EX_PATH_2 $ALGO $OPTIONS
-# python3 ./main.py -e1 $EX_PATH_1 -e2 $EX_PATH_2 -a $ALGO $OPTIONS
 
