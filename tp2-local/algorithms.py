@@ -62,11 +62,11 @@ class Algorithm:
   def display_time_execution(self):
     print(self.array_patterns[0].elapsed_time)
 
-  def display_solution(self):
-    print(*self.fingers_transitions)
-
-  def display_solution_dp(self):
-    print(*self.fingers_transitions[::-1])
+  def display_solution(self, type):
+    if type == "dp":
+      print(*self.fingers_transitions[::-1])
+    else:
+      print(*self.fingers_transitions)
 
 ##########################################################
 
@@ -87,7 +87,7 @@ class Algorithm:
       for p in self.array_patterns:
         if p.length_exemplary == l:
           self.average_costs += p.transition_cost
-          self.average_time_execution += p.elapsed_time
+          self.average_time_execution += (p.elapsed_time)
 
       self.average_costs = self.average_costs/10
       self.average_time_execution = round(self.average_time_execution/10, 4)
