@@ -5,7 +5,6 @@ import time
 class Glouton(Algorithm):
   def __init__(self, path):
     super().__init__(path)
-    self.transitions_costs = super().get_transitions_costs()
     if ".txt" in path:
       self.run(path)
     else:

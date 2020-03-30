@@ -6,13 +6,14 @@ from os import path
 
 class Algorithm:
   path = ""
-  array_length_exemplaries = []
   fingers_transitions = []
-  files = []
   array_patterns = []
 
+  # ils servent a trouver les moyennes
   average_costs = 0
   average_time_execution = 0
+  array_length_exemplaries = []
+  files = []
 
   def __init__(self, p):
     if path.exists(p):
@@ -46,9 +47,6 @@ class Algorithm:
     if path.exists(p):
       load_file = np.loadtxt(p, dtype=int)
       self.transitions_costs = load_file.reshape((24, 5, 24, 5))
-
-  def get_transitions_costs(self):
-    return self.transitions_costs
 
   def get_total_cost(self):
     return self.array_patterns[0].transition_cost

@@ -33,34 +33,34 @@ def main():
   else:
     print("Manque des arguments.")
 
-def display_answer(g, type, opt1, opt2, opt3):
+def display_answer(algo, type, opt1, opt2, opt3):
   if opt1 == "" and opt2 == "" and opt3 == "":
     print("Veuillez ajouter des argumentss")
-    g.get_averages()
+    # g.get_averages()
   elif opt2 == "" and opt3 == "":
     if opt1 == "-c":
-      g.display_solution(type)
+      algo.display_solution(type)
     elif opt1 == "-p":
-      g.display_total_cost()
+      algo.display_total_cost()
     elif opt1 == "-t":
-      g.display_time_execution()
+      algo.display_time_execution()
   elif opt3 == "":
     if opt1 == "-c" and opt2 == "-p":
-      g.display_solution(type)
-      g.display_total_cost()
+      algo.display_solution(type)
+      algo.display_total_cost()
     elif opt1 == "-c" and opt2 == "-t":
-      g.display_solution(type)
-      g.display_time_execution()
+      algo.display_solution(type)
+      algo.display_time_execution()
     elif opt1 == "-p" and opt2 == "-t":
-      g.display_total_cost()
-      g.display_time_execution()
+      algo.display_total_cost()
+      algo.display_time_execution()
     else:
       print("Veuillez entrer les arguments en ordre (-c -p OU -c -t OU -p -t)")
   else:
     if opt1 == "-c" and opt2 == "-p" and opt3 == "-t":
-      g.display_solution(type)
-      g.display_total_cost()
-      g.display_time_execution()
+      algo.display_solution(type)
+      algo.display_total_cost()
+      algo.display_time_execution()
     else:
       print("Veuillez entrer les arguments en ordre (-c -p -t)")
 
