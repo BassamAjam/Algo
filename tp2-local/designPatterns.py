@@ -33,10 +33,11 @@ def main():
   else:
     print("Manque des arguments.")
 
+
 def display_answer(algo, type, opt1, opt2, opt3):
   if opt1 == "" and opt2 == "" and opt3 == "":
     print("Veuillez ajouter des argumentss")
-    # g.get_averages()
+    # algo.get_averages(type)
   elif opt2 == "" and opt3 == "":
     if opt1 == "-c":
       algo.display_solution(type)
