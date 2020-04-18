@@ -25,7 +25,5 @@ esac
 shift
 done
 
-g++ -o code code.cpp&code.exe -e $EX_PATH -k $RATE $OPTIONS
-
-# ./code -e $EX_PATH -k $RATE $OPTIONS
+./code -e $EX_PATH -k $RATE $OPTIONS
 
