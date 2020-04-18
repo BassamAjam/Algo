@@ -5,6 +5,9 @@ from heuristique import Heuristique
 import sys
 
 def main():
+# exemple d'une commande:
+#./tp.sh -e1 ./exemplaires/ex_1000_1.txt -a dp -c -p -t
+
   opt1, opt2, opt3 = "", "", ""
   l = len(sys.argv)
 
