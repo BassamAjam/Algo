@@ -12,7 +12,7 @@
 
 using namespace std;
 
-int K = 0;
+int K = 3;
 int N = 0;
 int M = 0;
 int size_sol = 0;
@@ -52,21 +52,21 @@ int main(int argc, char* argv[])
 	srand(time(NULL));
 
 	// string path = "./folder/exemplaires/40_400_15_0.txt";
-	// string path = "./10_30_30_0.txt";
+	string path = "./10_30_30_0.txt";
 	//string path = "./folder/exemplaires/100_1000_20_0.txt";
 
-	string e = argv[1];
-	string path = argv[2];
-	string k = argv[3];
-	string rate_k = argv[4];
-	K = std::stoi(rate_k);
+	// string e = argv[1];
+	// string path = argv[2];
+	// string k = argv[3];
+	// string rate_k = argv[4];
+	// K = std::stoi(rate_k);
 	string option = "";
 
-	if (argv[5] != NULL)
-		option = argv[5];
+	// if (argv[5] != NULL)
+	// 	option = argv[5];
 	
-	while (true)
-	{
+	// while (true)
+	// {
 		if (option == "-p")
 			apply_local_search(path, "-p");
 		else
@@ -74,7 +74,7 @@ int main(int argc, char* argv[])
 
 		reset_solution(path);
 		// cout << "-----------------------------------------------------------------" << endl;
-	}
+	// }
 
 	return 0;
 
